@@ -21,10 +21,10 @@ yaml_version: 4
 #
 # Here is a great example: https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/blob/38c5647f83aad2aec675d566aa3d67b98f0aac81/info.yaml
 documentation: 
-  author:       ""      # Jeremy Hong
-  title:        ""      # Hong's Electronics ASIC 1
+  author:       "Jeremy Hong"      # Name
+  title:        "Hardware Trojan Example"      # Project Title
   language:     "Wokwi" # other examples include Verilog, Amaranth, VHDL, etc
-  description:  "Basic logic that drives the 7-segment display"      # Short description of what your project does
+  description:  "Simple hardware trojan circuit described by Ryan Cornateanu in a medium article"      # Short description of what your project does
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
@@ -70,6 +70,6 @@ documentation:
   tag:          "test, hardwaresecurity, hardwaretrojan, "      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
   external_hw:  "No external hardware required, just TinyTapeout Carrier Board"      # Describe any external hardware needed
   discord:      "Hongseleco"      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
-  doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
+  doc_link:     "README.md"      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     0       # Clock frequency in Hz (if required)
   picture:      ""      # relative path to a picture in your repository (must be 512kb or less)
