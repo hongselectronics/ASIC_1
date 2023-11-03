@@ -28,31 +28,32 @@ documentation:
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
-      Logic inputs via DIP switches drives 7 segment display using BCD driver
+      Based off of medium article by Ryan Cornateanu: "Hardware Trojans IUnder a Microscope https://ryancor.medium.com/hardware-trojans-under-a-microscope-bf542acbcc29
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
-      Use DIP switches as input 
+      Use DIP switches as input, 1- 4 is for normal circuit that would be considered "secure", and 5 - 8 for compromised circuit with embedded Hardware Trojan
+      
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
+    - r0_normal
+    - r1_normal
+    - r2_normal
+    - r3_normal
+    - r0_trojan
+    - r1_trojan
+    - r2_trojan
+    - r3_trojan
 # A description of what the outputs do (e.g. status LED, SPI MISO, etc)
   outputs:
-    - segment a
+    - Output from r0_normal - r4_normal circuit
     - segment b
     - segment c
     - segment d
     - segment e
     - segment f
-    - segment g
+    - Output from r0_trojan to r3_trojan circuit
     - dot
 # A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
   bidirectional:
@@ -66,9 +67,9 @@ documentation:
     - none
 
 # The following fields are optional
-  tag:          ""      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
-  external_hw:  ""      # Describe any external hardware needed
-  discord:      ""      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
+  tag:          "test, hardwaresecurity, hardwaretrojan, "      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
+  external_hw:  "No external hardware required, just TinyTapeout Carrier Board"      # Describe any external hardware needed
+  discord:      "Hongseleco"      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
   doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     0       # Clock frequency in Hz (if required)
   picture:      ""      # relative path to a picture in your repository (must be 512kb or less)
