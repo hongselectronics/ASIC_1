@@ -53,7 +53,7 @@ documentation:
     - segment d not used
     - segment e not used
     - segment f not used
-    - Output from r0_trojan to r3_trojan circuit
+    - Output from r0_trojan - r3_trojan circuit
     - dot not used
 # A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
   bidirectional:
